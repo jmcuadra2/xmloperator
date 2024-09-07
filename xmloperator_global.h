@@ -1,0 +1,12 @@
+#ifndef XMLOPERATOR_GLOBAL_H
+#define XMLOPERATOR_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(XMLOPERATOR_LIBRARY)
+#  define XMLOPERATOR_EXPORT Q_DECL_EXPORT
+#else
+#  define XMLOPERATOR_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // XMLOPERATOR_GLOBAL_H
